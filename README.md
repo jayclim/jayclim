@@ -3,9 +3,9 @@
 </div>
 
 <p align="center">
-  <a href="https://jaydenclim.com"><img src="https://img.shields.io/badge/Portfolio-jaydenclim.com-cdfa50?style=flat-square&labelColor=0b0d0c" alt="Portfolio"></a>
-  <a href="https://linkedin.com/in/jaydenclim"><img src="https://img.shields.io/badge/LinkedIn-jaydenclim-2fd4c4?style=flat-square&logo=linkedin&logoColor=2fd4c4&labelColor=0b0d0c" alt="LinkedIn"></a>
-  <a href="mailto:jcl399@cornell.edu"><img src="https://img.shields.io/badge/Email-jcl399%40cornell.edu-ff8b5e?style=flat-square&labelColor=0b0d0c" alt="Email"></a>
+  <a href="https://jaydenclim.com"><img src="https://img.shields.io/badge/Portfolio-jaydenclim.com-cdfa50?style=for-the-badge&logo=googlechrome&logoColor=cdfa50&labelColor=0b0d0c" alt="Portfolio"></a>
+  <a href="https://linkedin.com/in/jaydenclim"><img src="https://img.shields.io/badge/LinkedIn-jaydenclim-2fd4c4?style=for-the-badge&logo=linkedin&logoColor=2fd4c4&labelColor=0b0d0c" alt="LinkedIn"></a>
+  <a href="mailto:jcl399@cornell.edu"><img src="https://img.shields.io/badge/Email-jcl399%40cornell.edu-ff8b5e?style=for-the-badge&logo=gmail&logoColor=ff8b5e&labelColor=0b0d0c" alt="Email"></a>
 </p>
 
 <br>
@@ -36,8 +36,8 @@
 <br>
 
 <div align="center">
-  <a href="https://badminton.jaydenclim.com/"><img src="assets/courtside.jpg" width="100%" alt="COURTSIDE dashboard: score worm, stat duel and auto-generated coach's notes, all inferred from broadcast pixels"></a>
-  <p><i>Every number on that page was inferred from pixels. No human labels.</i></p>
+  <a href="https://badminton.jaydenclim.com/"><img src="assets/courtside-annotated.gif" width="100%" alt="COURTSIDE: a live rally with pose skeletons, shuttle trail, shot classification and machine-read score drawn on the broadcast, next to a 2D replay animated from the tracks"></a>
+  <p><i><b>COURTSIDE, mid-rally.</b> Pose skeletons, the shuttle trail, the shot call with its confidence,<br>the score read straight off the scoreboard, and a 2D replay animated from the tracks.<br>Nothing here was labelled by hand.</i></p>
 </div>
 
 <details>
@@ -60,6 +60,10 @@ End to end the label-free chain reproduces **84.5% / 79.5%** of annotated stroke
 and shot classification come from pretrained third-party models; hit detection, landings, rally
 segmentation, score OCR and the analytics are mine. Full breakdown in the
 [repo](https://github.com/jayclim/BadmintonAI#readme).
+
+<br>
+
+<a href="https://badminton.jaydenclim.com/"><img src="assets/courtside.jpg" width="100%" alt="COURTSIDE dashboard: score worm, stat duel and auto-generated coach's notes"></a>
 
 </details>
 
@@ -116,10 +120,7 @@ Bin-search mission logic in Python/asyncio on the team's RoboSub vehicle. 7-chan
 
 <br>
 
-**Languages** Python · TypeScript · JavaScript · OCaml · SQL · Java · Swift<br>
-**ML & Data** PyTorch · YOLO · OpenCV · pandas · NumPy · scikit-learn · spaCy · DuckDB · PostgreSQL · RAG (AWS Bedrock)<br>
-**Web** Next.js · React · React Native · FastAPI · Flask · Django · Tailwind<br>
-**Infra** Linux · Docker · AWS · GitHub Actions · CI/CD · Vercel · MCP · OWASP ZAP
+<img src="assets/stack.svg" width="100%" alt="Toolbox: languages, ML and data, web, infrastructure">
 
 </details>
 
