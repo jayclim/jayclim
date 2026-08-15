@@ -11,16 +11,16 @@
     <rect width="520" height="190" fill="url(#glow)"/>
     <rect width="4" height="190" fill="#ff8b5e"/>
 
-    <text x="28" y="38" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="10.5" fill="#ff8b5e" letter-spacing="1.8">AGENTS · RUNNER-UP</text>
+    <text x="28" y="38" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="10.5" fill="#ff8b5e" letter-spacing="1.8">AGENTS · LOOP HACKATHON SF</text>
     <text x="28" y="76" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="27" font-weight="700" fill="#f2f5f2" letter-spacing="-0.5">PitchLoop</text>
     <text x="28" y="104" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="13.5" fill="#c6cdc7">Outbound sales agent that researches, learns,</text>
     <text x="28" y="124" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="13.5" fill="#c6cdc7">and authors the tools it finds missing.</text>
-    <text x="28.0" y="150" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="11.5" font-weight="700" fill="#ff8b5e">4</text>
-    <text x="40.9" y="150" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="11.5" fill="#828a83">person team led</text>
-    <text x="162.4" y="150" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="11.5" font-weight="700" fill="#ff8b5e">65</text>
-    <text x="182.2" y="150" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="11.5" fill="#828a83">submissions</text>
-    <text x="276.1" y="150" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="11.5" font-weight="700" fill="#ff8b5e">195</text>
-    <text x="302.8" y="150" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="11.5" fill="#828a83">participants</text>
+    <text x="28.0" y="150" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="11.5" font-weight="700" fill="#ff8b5e">2nd place</text>
+    <text x="96.1" y="150" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="11.5" fill="#828a83">Zero.xyz track</text>
+    <text x="210.7" y="150" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="11.5" font-weight="700" fill="#ff8b5e">$500</text>
+    <text x="244.3" y="150" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="11.5" fill="#828a83">prize</text>
+    <text x="296.8" y="150" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="11.5" font-weight="700" fill="#ff8b5e">65</text>
+    <text x="316.6" y="150" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="11.5" fill="#828a83">submissions</text>
 
     <text x="494" y="40" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="17" fill="#828a83" text-anchor="end">&#8599;</text>
     <text x="494" y="174" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="9.5" fill="#828a83" text-anchor="end">Python · FastAPI · Pomerium · Zero.xyz</text>

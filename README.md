@@ -63,7 +63,9 @@ segmentation, score OCR and the analytics are mine. Full breakdown in the
 
 <br>
 
-<a href="https://badminton.jaydenclim.com/"><img src="assets/courtside.jpg" width="100%" alt="COURTSIDE dashboard: score worm, stat duel and auto-generated coach's notes"></a>
+<a href="https://badminton.jaydenclim.com/"><img src="assets/courtside-lab.jpg" width="100%" alt="COURTSIDE AI Lab: live score-OCR crops, the AI-vs-labels confusion matrix, and per-class recall"></a>
+
+<sub>The AI Lab page publishes the gap between the pipeline and the human labels, per stage, rather than only the wins.</sub>
 
 </details>
 
