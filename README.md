@@ -1,114 +1,130 @@
-# Jayden Lim
+<div align="center">
+  <img src="assets/hero.svg" width="100%" alt="Jayden Lim. CS @ Cornell. I build computer vision and agent systems, then the dashboards that make them legible.">
+</div>
 
-CS @ Cornell (B.S. Computer Science, minor in ECE, graduating May 2028). I build systems
-that turn messy real-world signals into something you can act on: computer vision,
-retrieval, and agent infrastructure, plus the dashboards that make the output legible.
+<p align="center">
+  <a href="https://jaydenclim.com"><img src="https://img.shields.io/badge/Portfolio-jaydenclim.com-cdfa50?style=flat-square&labelColor=0b0d0c" alt="Portfolio"></a>
+  <a href="https://linkedin.com/in/jaydenclim"><img src="https://img.shields.io/badge/LinkedIn-jaydenclim-2fd4c4?style=flat-square&logo=linkedin&logoColor=2fd4c4&labelColor=0b0d0c" alt="LinkedIn"></a>
+  <a href="mailto:jcl399@cornell.edu"><img src="https://img.shields.io/badge/Email-jcl399%40cornell.edu-ff8b5e?style=flat-square&labelColor=0b0d0c" alt="Email"></a>
+</p>
 
-Software Engineer Intern at **Cisco (Duo Security)** this past summer, working on incident
-response and internal SRE tooling. Currently building a plant-telemetry control dashboard
-at **NSF CROPPS** and writing mission logic for Cornell's **CUAUV** autonomous submarine
-team.
+<br>
 
-**[jaydenclim.com](https://jaydenclim.com)** · **[LinkedIn](https://linkedin.com/in/jaydenclim)** · jcl399@cornell.edu · Ithaca, NY (from the Bay Area)
+<table>
+<tr>
+<td width="50%" valign="top">
+  <a href="https://github.com/jayclim/BadmintonAI"><img src="assets/card-courtside.svg" width="100%" alt="COURTSIDE: broadcast video in, scouting report out"></a>
+  <p align="center"><a href="https://badminton.jaydenclim.com/"><b>↗ Live dashboard</b></a> &nbsp;·&nbsp; <a href="https://github.com/jayclim/BadmintonAI">Code</a></p>
+</td>
+<td width="50%" valign="top">
+  <a href="https://github.com/jayclim/pitchloop"><img src="assets/card-pitchloop.svg" width="100%" alt="PitchLoop: outbound sales agent, hackathon runner-up"></a>
+  <p align="center"><a href="https://devpost.com/software/pitchloop"><b>↗ Devpost</b></a> &nbsp;·&nbsp; <a href="https://github.com/jayclim/pitchloop">Code</a></p>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+  <a href="https://github.com/jayclim/InvestBot"><img src="assets/card-investbot.svg" width="100%" alt="InvestBot: rule strategies against LLM swarms"></a>
+  <p align="center"><a href="https://invest-bot-gray.vercel.app/"><b>↗ Live dashboard</b></a> &nbsp;·&nbsp; <a href="https://github.com/jayclim/InvestBot">Code</a></p>
+</td>
+<td width="50%" valign="top">
+  <a href="https://github.com/jayclim/DoomGuard"><img src="assets/card-doomguard.svg" width="100%" alt="DoomGuard: Android focus app with a custom Kotlin native module"></a>
+  <p align="center"><a href="https://github.com/jayclim/DoomGuard"><b>↗ Code</b></a> &nbsp;·&nbsp; <a href="https://github.com/jayclim/DoomGuard#readme">Readme</a></p>
+</td>
+</tr>
+</table>
 
----
+<br>
 
-## Selected work
+<div align="center">
+  <a href="https://badminton.jaydenclim.com/"><img src="assets/courtside.jpg" width="100%" alt="COURTSIDE dashboard: score worm, stat duel and auto-generated coach's notes, all inferred from broadcast pixels"></a>
+  <p><i>Every number on that page was inferred from pixels. No human labels.</i></p>
+</div>
 
-### [COURTSIDE](https://github.com/jayclim/BadmintonAI) · badminton match intelligence from broadcast video
+<details>
+<summary><b>&nbsp;How COURTSIDE scores against human annotators</b></summary>
 
-Solo-built CV system that watches a badminton broadcast and writes the scouting report. It
-tracks both players and the shuttle, detects every hit, reads the scoreboard, segments
-rallies, and turns all of it into a coach-grade analytics dashboard with AI-annotated video
-for every rally. No human labels at inference time.
+<br>
 
-Thresholds were tuned on one match and tested untouched on a second, so the held-out
-numbers are true out-of-distribution: hit detection **F1 87.9**, rally segmentation **F1
-97.6**, players located to **0.57 m** on court, score OCR **95.2%**. End to end it
-reproduces 84.5% of professionally annotated strokes. Every stage publishes its own
-accuracy against ShuttleSet22 ground truth, including the gap between tuned and held out.
+Thresholds were tuned on one match and tested untouched on a second, so the held-out column is true
+out-of-distribution performance. Ground truth is ShuttleSet22.
 
-Two-tier DuckDB store (per-frame tracks underneath, one row per shot on top) so detection
-logic can change without ever reprocessing video.
+| Stage | Tuned | Held out |
+|---|---|---|
+| Hit detection | **F1 87.9** | F1 85.8 |
+| Rally segmentation | **F1 97.6** | F1 94.0 |
+| Player → court metres | **0.57 m** median | 0.64 m |
+| Landing position | **0.55 m** median | 1.12 m |
+| Score OCR | **95.2%** | 97.3% |
 
-`Python` `PyTorch` `YOLO11-Pose` `TrackNetV3` `OpenCV` `DuckDB` `Next.js` `TypeScript`
+End to end the label-free chain reproduces **84.5% / 79.5%** of annotated strokes. Player detection
+and shot classification come from pretrained third-party models; hit detection, landings, rally
+segmentation, score OCR and the analytics are mine. Full breakdown in the
+[repo](https://github.com/jayclim/BadmintonAI#readme).
 
-**[Live dashboard](https://badminton.jaydenclim.com/)**
+</details>
 
-### [PitchLoop](https://github.com/jayclim/pitchloop) · consent-gated outbound sales agent
+<details>
+<summary><b>&nbsp;More things I've built</b></summary>
 
-***Runner-up, Best Use of Zero.xyz · Loop Engineering Hackathon (SF, July 2026) · 65 submissions, 195 participants***
+<br>
 
-Researches a prospect queue, learns across conversations through evidence-backed
-reflections, and acquires or authors the tools it finds missing. Every paid action passes a
-real Pomerium allow/deny policy gate under a hard spend ceiling.
+| | |
+|---|---|
+| **[Clash Royale Analytics](https://github.com/jayclim/CR-Data)** | Scheduled ETL that has auto-committed **1,300+** times and redeployed itself since launch, unattended. [Live ↗](https://clash.jaydenclim.com/) |
+| **[OneCall](https://github.com/jayclim/onecall)** | Voice healthcare navigation. A deterministic red-flag screen runs ahead of any model call, then specialty triage over semantic retrieval. FHIR R4, real CMS provider data. |
+| **[FoldEx](https://github.com/jayclim/foldex)** | Finalist (top 5), Cornell Claude Builder Club Hackathon. Async FastAPI + RQ pipeline orchestrating Claude over Ensembl, ClinVar, gnomAD and AlphaFold. [Live ↗](https://foldex-three.vercel.app/) |
+| **[Veto](https://github.com/jayclim/Veto)** | MCP budget-guardrail server. Agents with receipts. |
 
-I led a team of four and owned the agent core: the plan → policy → enrich → call → diagnose
-→ reflect → retry state machine, and the integration across all four vendor layers. We
-froze a typed interface contract and a file-ownership map before anyone wrote code, which
-is the reason four people shipped one coherent system overnight.
+</details>
 
-`Python` `FastAPI` `Zero.xyz` `Pomerium` `Nexla`
+<details>
+<summary><b>&nbsp;Where I've worked</b></summary>
 
-**[Devpost](https://devpost.com/software/pitchloop)**
+<br>
 
-### [InvestBot](https://github.com/jayclim/InvestBot) · rule strategies vs LLM agents, scored head to head
+**Cisco** · Software Engineer Intern, Duo Security · Summer 2026<br>
+Migrated Duo onto Cisco's internal multi-tenant incident platform as its third tenant org, designed
+and owned the end-to-end incident-response pipeline replacing the outgoing third-party tool, and
+built the retrieval layer of an internal SRE assistant on AWS Bedrock.
 
-Three rule-based strategies against LLM agent swarms over one shared ~100-name universe,
-scored on identical fills. Per-fill slippage, 15% stop-loss, position caps, a $60 equity
-circuit breaker, benchmarked against SPY. The Dec–Jun walk-forward backtest is kept
-strictly separate from the forward-only book, so nothing in the results is fit on data the
-agents already saw.
+**NSF CROPPS** · Software Engineer · Mar 2026 – present<br>
+React/Flask control dashboard for 57 networked research plants, 6 IoT device systems, live camera
+feed at 15 FPS over Flask.
 
-The interesting design question was how to make a rule engine and an LLM swarm comparable
-at all. They run on the same universe, the same bars and the same fill model, so the only
-variable is how each one decides.
+**CUAUV** · Software Engineer · Oct 2025 – present<br>
+Bin-search mission logic in Python/asyncio on the team's RoboSub vehicle. 7-channel RGB + surface-normal
++ depth YOLO detector across 10 classes, ~20% detection improvement over RGB-only.
 
-`Python` `Next.js` `Claude API` `MCP`
+**Stanford AIMI** · Research Intern · Jun 2024<br>
+12,549 chest X-rays, RadGraph-parsed reports. Data-level downsampling took the model from 0.56 to
+**0.86 macro-AUROC** and fixed three classes that had collapsed to 0.00 F1.
 
-**[Live dashboard](https://invest-bot-gray.vercel.app/)**
+</details>
 
----
+<details>
+<summary><b>&nbsp;Research</b></summary>
 
-## Also
+<br>
 
-**[Clash Royale Analytics](https://github.com/jayclim/CR-Data)** · scheduled ETL that has
-auto-committed **1,300+** times and redeployed itself since launch, unattended.
-[Live](https://clash.jaydenclim.com/)
+- **Multilabel Classification for Lung Disease Detection** · [arXiv:2412.11452](https://arxiv.org/abs/2412.11452) (2024)
+- **A Novel Hybrid Post-Hartree-Fock and Monte Carlo Algorithm** · [IJCEA / ICCME 2025](https://doi.org/10.18178/ijcea.2025.16.1.41-47). Led an 8-person research team.
 
-**[DoomGuard](https://github.com/jayclim/DoomGuard)** · Android focus app with a custom
-Kotlin native module (UsageStatsManager monitoring, blocking overlay, boot-persistent
-foreground service), **78 tests** and GitHub Actions CI.
+</details>
 
-**[OneCall](https://github.com/jayclim/onecall)** · voice healthcare navigation. A
-deterministic red-flag emergency screen runs ahead of any model call, then Moss-grounded
-specialty triage over semantic retrieval. FHIR R4, real CMS provider data.
+<details>
+<summary><b>&nbsp;Toolbox</b></summary>
 
-**[FoldEx](https://github.com/jayclim/foldex)** · Finalist (top 5), Cornell Claude Builder
-Club Hackathon. Staged async FastAPI + RQ pipeline orchestrating Claude over Ensembl,
-ClinVar, gnomAD and AlphaFold. [Live](https://foldex-three.vercel.app/)
-
----
-
-## Research
-
-Co-author, *Multilabel Classification for Lung Disease Detection*, [arXiv:2412.11452](https://arxiv.org/abs/2412.11452) (2024).
-Work done at **Stanford AIMI**: 12,549 chest X-rays, RadGraph-parsed reports, ConvNeXt and
-ResNet-50. Data-level downsampling took the model from 0.56 to **0.86 macro-AUROC** and
-fixed three classes that had collapsed to 0.00 F1 under the dominant label.
-
-Co-author, *A Novel Hybrid Post-Hartree-Fock and Monte Carlo Algorithm*, [IJCEA / ICCME 2025](https://doi.org/10.18178/ijcea.2025.16.1.41-47). Led an 8-person research team.
-
----
-
-## Toolbox
+<br>
 
 **Languages** Python · TypeScript · JavaScript · OCaml · SQL · Java · Swift<br>
 **ML & Data** PyTorch · YOLO · OpenCV · pandas · NumPy · scikit-learn · spaCy · DuckDB · PostgreSQL · RAG (AWS Bedrock)<br>
 **Web** Next.js · React · React Native · FastAPI · Flask · Django · Tailwind<br>
 **Infra** Linux · Docker · AWS · GitHub Actions · CI/CD · Vercel · MCP · OWASP ZAP
 
----
+</details>
 
-Cornell Badminton competitive team, 2nd place at Regionals. Which is the actual reason
-COURTSIDE exists.
+<br>
+
+<div align="center">
+  <sub>Cornell Badminton competitive team, 2nd at Regionals. Which is the actual reason COURTSIDE exists.</sub>
+</div>
