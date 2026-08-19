@@ -129,5 +129,5 @@ Bin-search mission logic in Python/asyncio on the team's RoboSub vehicle. 7-chan
 <br>
 
 <div align="center">
-  <sub>Cornell Badminton competitive team, 2nd at Regionals. Which is the actual reason COURTSIDE exists.</sub>
+  <sub>Fun fact! I love badminton and I am on the Cornell Badminton team!</sub>
 </div>
