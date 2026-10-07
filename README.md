@@ -27,8 +27,8 @@
   <p align="center"><a href="https://invest-bot-gray.vercel.app/"><b>↗ Live dashboard</b></a> &nbsp;·&nbsp; <a href="https://github.com/jayclim/InvestBot">Code</a></p>
 </td>
 <td width="50%" valign="top">
-  <a href="https://github.com/jayclim/DoomGuard"><img src="assets/card-doomguard.svg" width="100%" alt="DoomGuard: Android focus app with a custom Kotlin native module"></a>
-  <p align="center"><a href="https://github.com/jayclim/DoomGuard"><b>↗ Code</b></a> &nbsp;·&nbsp; <a href="https://github.com/jayclim/DoomGuard#readme">Readme</a></p>
+  <a href="https://github.com/Cryplo/HackMIT26"><img src="assets/card-sift.svg" width="100%" alt="Sift: reimbursement review that turns human decisions into tested, reusable checks. HackMIT 2026 finalist."></a>
+  <p align="center"><a href="https://jaydenclim.com/project/sift"><b>↗ Project overview</b></a> &nbsp;·&nbsp; <a href="https://github.com/Cryplo/HackMIT26">Code</a></p>
 </td>
 </tr>
 </table>
@@ -79,6 +79,7 @@ segmentation, score OCR and the analytics are mine. Full breakdown in the
 | **[Clash Royale Analytics](https://github.com/jayclim/CR-Data)** | Scheduled ETL that has auto-committed **1,300+** times and redeployed itself since launch, unattended. [Live ↗](https://clash.jaydenclim.com/) |
 | **[OneCall](https://github.com/jayclim/onecall)** | Voice healthcare navigation. A deterministic red-flag screen runs ahead of any model call, then specialty triage over semantic retrieval. FHIR R4, real CMS provider data. |
 | **[FoldEx](https://github.com/jayclim/foldex)** | Finalist (top 5), Cornell Claude Builder Club Hackathon. Async FastAPI + RQ pipeline orchestrating Claude over Ensembl, ClinVar, gnomAD and AlphaFold. [Live ↗](https://foldex-three.vercel.app/) |
+| **[DoomGuard](https://github.com/jayclim/DoomGuard)** | Android focus app that blocks distracting apps until daily habits are done. React Native with a custom Kotlin native module. |
 | **[Veto](https://github.com/jayclim/Veto)** | MCP budget-guardrail server. Agents with receipts. |
 
 </details>
